@@ -146,8 +146,8 @@ public class Term extends Activity {
     private int mStatusBar = 0;
     private int mCursorStyle = 0;
     private int mCursorBlink = 0;
-    private int mFontSize = 9;
-    private int mColorId = 2;
+    private int mFontSize = 12;
+    private int mColorId = 1;
     private int mControlKeyId = 5; // Default to Volume Down
     private int mFnKeyId = 4; // Default to Volume Up
     private int mUseCookedIME = 0;
@@ -201,7 +201,7 @@ public class Term extends Activity {
     private int mControlKeyCode;
     private int mFnKeyCode;
 
-    private final static String DEFAULT_SHELL = "/system/bin/sh -";
+    private final static String DEFAULT_SHELL = "/system/xbin/su -c \"busybox sh\"";
     private String mShell;
 
     private final static String DEFAULT_INITIAL_COMMAND =
